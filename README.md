@@ -6,7 +6,7 @@ import pickle
 # Load the pickled model
 model_filename = 'xgb_model.pkl'
 with open(model_filename, 'rb') as file:
-loaded_model = pickle.load(file)
+  loaded_model = pickle.load(file)
 
 # Use the loaded model for predictions
 predictions = loaded_model.predict(X_test)
